@@ -307,16 +307,19 @@ button {
 .sejourner div:last-child {
   display: flex;
 
-  gap: 12px;
+  gap: 15px;
 }
 
 .nav1 {
   position: relative;
 }
 
-.nav1 img:last-child {
+.nav1 img:nth-child(2) {
   height: 45px;
   width: 35px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
 }
 
 footer img {
@@ -325,4 +328,10 @@ footer img {
 
 footer p {
   font-weight: bold;
+}
+
+.nav1 i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
