@@ -1,0 +1,328 @@
+/* ----- GÉNÉRAL ----- */
+
+body {
+  font-family: TS-Reg, sans-serif;
+}
+
+main {
+  width: 1135px;
+  margin: 0 auto;
+}
+
+/* ----- HEADER ----- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 1135px;
+  margin: 0 auto;
+}
+
+header img:first-child {
+  width: 185px;
+  height: 60px;
+}
+
+header img:nth-child(3) {
+  width: 145px;
+  height: 60px;
+}
+
+header nav {
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 350px;
+}
+
+header nav p {
+  gap: 35px;
+  font-weight: bold;
+  color: #545454;
+  font-size: 16px;
+}
+
+/* ----- MAIN ------ */
+h1 {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #fe5d5d;
+  font-weight: bold;
+}
+
+h1 span {
+  color: #000000;
+}
+
+main p {
+  color: #333333;
+}
+
+.menu {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.menu nav {
+  border: solid black 1px;
+  border-radius: 20px;
+  width: 179px;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.menu nav:hover {
+  background-color: black;
+  color: white;
+}
+
+.montjuic {
+  margin-top: 20px;
+  width: 652px;
+  height: 428px;
+}
+
+.paddle {
+  margin-top: 20px;
+  margin-left: 2px;
+  width: 484px;
+  height: 211px;
+}
+
+.guell {
+  margin-left: 2px;
+  width: 484px;
+  height: 211px;
+}
+
+.all-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.montjuic:hover {
+  opacity: 0.5;
+}
+
+.paddle:hover {
+  opacity: 0.5;
+}
+
+.guell:hover {
+  opacity: 0.5;
+}
+
+.below-images {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.below-images nav {
+  color: #333333;
+  font-size: 15px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.desc-barcelona {
+  width: 590px;
+  height: 430px;
+
+  color: #333333;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+main p:first-child {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #f9f1ec;
+  height: 156px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* --- PARTIE 2 ---- */
+
+.immanquables > div {
+  display: flex;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.immanquables div:first-child {
+  flex: 1;
+}
+
+.immanquables div:last-child {
+  flex: 3;
+}
+
+.columns1 p {
+  margin-bottom: 15px;
+}
+
+.columns1 p:last-child {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.columns2 img {
+  height: 200px;
+  width: 265px;
+}
+
+.columns2 {
+  display: flex;
+  overflow: scroll hidden;
+  gap: 15px;
+}
+
+.img-sagrada {
+  position: relative;
+}
+
+.columns2 div i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+i {
+  height: 40px;
+}
+
+.img-sagrada img:last-child {
+  height: 45px;
+  width: 35px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.img-mercat {
+  position: relative;
+}
+
+.img-mercat img:last-child {
+  height: 45px;
+  width: 35px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.img-chimney {
+  position: relative;
+}
+
+.img-chimney img:last-child {
+  height: 45px;
+  width: 35px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.img-beach {
+  position: relative;
+}
+
+.img-beach img:last-child {
+  height: 45px;
+  width: 35px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.img-sagrada:first-child:hover {
+  opacity: 0.5;
+}
+
+.img-mercat:first-child:hover {
+  opacity: 0.5;
+}
+
+.img-chimney:first-child:hover {
+  opacity: 0.5;
+}
+
+/* --- SEJOURNER---- */
+
+.sejourner {
+  display: flex;
+  margin-top: 30px;
+}
+
+.first-div {
+  flex: 1;
+}
+
+.second-div {
+  flex: 3;
+  overflow: scroll hidden;
+}
+
+button {
+  margin-top: 15px;
+  text-decoration: underline;
+  border: none;
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.sejourner nav img:first-child {
+  height: 200px;
+  width: 265px;
+}
+
+.sejourner div:last-child {
+  display: flex;
+
+  gap: 12px;
+}
+
+.nav1 {
+  position: relative;
+}
+
+.nav1 img:last-child {
+  height: 45px;
+  width: 35px;
+}
+
+footer img {
+  height: 50px;
+}
+
+footer p {
+  font-weight: bold;
+}
