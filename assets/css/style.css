@@ -89,7 +89,6 @@ main p {
 .menu nav {
   border: solid black 1px;
   border-radius: 20px;
-
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -374,5 +373,13 @@ footer p {
 
   .connectez-vous {
     display: none;
+  }
+
+  .right-images {
+    display: none;
+  }
+
+  .montjuic {
+    object-fit: contain;
   }
 }
