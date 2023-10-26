@@ -13,8 +13,8 @@ main {
 
 header {
   display: flex;
-  justify-content: space-between;
-  width: 1135px;
+  justify-content: space-around;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -34,7 +34,21 @@ header nav {
   align-items: center;
   justify-content: space-between;
 
-  width: 350px;
+  flex: 1;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.connectez-vous {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
 header nav p {
@@ -45,6 +59,10 @@ header nav p {
 }
 
 /* ----- MAIN ------ */
+
+main {
+  width: 100%;
+}
 h1 {
   font-size: 40px;
   margin-top: 20px;
@@ -65,13 +83,14 @@ main p {
   display: flex;
   margin-top: 20px;
   gap: 10px;
+  border: red solid 1px;
 }
 
 .menu nav {
   border: solid black 1px;
   border-radius: 20px;
-  width: 179px;
-  height: 66px;
+
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding-left: 10px;
@@ -334,4 +353,26 @@ footer p {
   position: absolute;
   top: 15px;
   right: 15px;
+}
+
+/* --- MEDIA QUERIES ------- */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* on veut faire disparaitre Découvrir/Préparer un voyage/Participer */
+
+  header nav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* on veut faire disparaitre Découvrir/Préparer un voyage/Participer */
+
+  header nav {
+    display: none;
+  }
+
+  .connectez-vous {
+    display: none;
+  }
 }
