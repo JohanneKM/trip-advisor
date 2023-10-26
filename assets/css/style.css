@@ -89,12 +89,16 @@ main p {
 .menu nav {
   border: solid black 1px;
   border-radius: 20px;
-  width: 100%;
+  width: calc((100% - 50px) / 6);
   display: flex;
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 20px;
+}
+
+.to-hide {
+  display: none;
 }
 
 .menu nav:hover {
@@ -356,20 +360,30 @@ footer p {
 
 /* --- MEDIA QUERIES ------- */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   /* on veut faire disparaitre Découvrir/Préparer un voyage/Participer */
 
   header nav {
     display: none;
+  }
+
+  .desc-barcelona {
+    width: 100%;
+    height: none;
+  }
+
+  .menu nav {
+    width: calc((100% - 30px) / 4);
+    flex-shrink: 0;
+  }
+
+  .menu {
+    flex-wrap: wrap;
   }
 }
 
 @media (max-width: 768px) {
   /* on veut faire disparaitre Découvrir/Préparer un voyage/Participer */
-
-  header nav {
-    display: none;
-  }
 
   .connectez-vous {
     display: none;
@@ -380,6 +394,13 @@ footer p {
   }
 
   .montjuic {
-    object-fit: contain;
+    width: 100%;
+    height: 428px;
+    object-fit: scale-down;
+  }
+
+  .desc-barcelona {
+    width: 100%;
+    height: none;
   }
 }
